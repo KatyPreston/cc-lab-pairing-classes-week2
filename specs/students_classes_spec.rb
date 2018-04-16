@@ -26,6 +26,15 @@ class TestStudent < MiniTest::Test
     assert_equal(22, list.get_cohort())
   end
 
+  def test_student_talks
+    list = Student.new("Katy", 21)
+    assert_equal("I like to talk", list.talk())
+  end
+
+def test_fav_language
+    list = Student.new("Katy", 21)
+    assert_equal("I love Ruby", list.fav_language("Ruby"))
+end
 
 
 
