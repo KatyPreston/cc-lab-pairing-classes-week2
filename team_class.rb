@@ -2,7 +2,7 @@ class Team
 
   attr_accessor(:name, :players, :coach)
 
-  def initialize(name, players, coach, points)
+  def initialize(name, players, coach, points)  #don't need points as an argument here
     @name = name
     @players = players
     @coach = coach
@@ -44,7 +44,7 @@ class Team
       @points += 10
     elsif win_or_lose == "lose"
       @points -= 5
-    end
+    end                                        #@points += 10 if win_or_lose == "win"
   end
 
 end

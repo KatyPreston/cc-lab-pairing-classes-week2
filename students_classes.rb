@@ -26,7 +26,7 @@ class Student
   end
 
   def fav_language(language)
-    return "I love " + language
+    return "I love " + language     #"I love #{language}"    would be just as good
   end
 
 end

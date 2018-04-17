@@ -40,7 +40,7 @@ class TestTeam < MiniTest::Test
   def test_win_or_lose
     team = Team.new("Tigers", ["Katy", "Laura", "Rachel", "Tom"], "Carter", 0)
     team.outcome("win")
-    assert_equal(10, team.outcome("win"))
+    assert_equal(10, team.outcome("win"))  #use a different method to get out result eg team.points()
   end
 
 end
